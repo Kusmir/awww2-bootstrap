@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="mx-5">
+            <div class="row">
+                <header class="text-center text-lg display-5">Podsumowanie zamówienia</header>
+            </div>
+            <hr my-4>
+            <div class="row g-5">
+                <div class="col">
+                    <form class="row g-3">
+                        <h4>Adres dostawy</h4>
+                        <div class="col-md-6">
+                            <label for="inputName" class="form-label">Imię</label>
+                            <input type="name" class="form-control" id="inputName">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputSurname" class="form-label">Nazwisko</label>
+                            <input type="password" class="form-control" id="inputSurname">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputEmail" class="form-label">Adres e-mail</label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="costam@cosinnego.cos">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Adres</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">
+                                Adres 2 <span class="text-body-secondary">(Opcjonalnie)</span>
+                            </label>
+                            <input type="text" class="form-control" id="inputAddress2">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCountry" class="form-label">Kraj</label>
+                            <select class="form-select" id="inputCity"> 
+                                <option selected>Wybierz...</option>
+                                <option>Polska</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputCity" class="form-label">Miasto</label>
+                            <select class="form-select" id="inputCity"> 
+                                <option selected>Wybierz...</option>
+                                <option>Warszawa</option>
+                                <option>Wrocław</option>
+                                <option>Szczecin</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputPostalCode" class="form-label">Kod pocztowy</label>
+                            <input type="text" class="form-control" id="inputPostalCode" placeholder="12-345">
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h4>Płatność</h4>
+                        <div class="my-3">
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="choosePayment" id="creditCard">
+                                <label class="form-check-label" for="creditCard">
+                                    Karta kredytowa
+                                </label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="choosePayment" id="PayPal">
+                                <label class="form-check-label" for="PayPal">
+                                    PayPal 
+                                </label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="choosePayment" id="Blik">
+                                <label class="form-check-label" for="Blik">
+                                    Blik
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label" for="inputCardName">
+                                Imię i nazwisko właściciela karty
+                            </label>
+                            <input type="text" class="form-control" id="inputCardName">
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label" for="inputCardNumber">
+                                Numer karty kredytowej
+                            </label>
+                            <input type="text" class="form-control" id="inputCardNumber">
+                        </div>
+
+                        <div class="col-3">
+                            <label class="form-label" for="cardExpiration">Data ważności</label>
+                            <input type="text" class="form-control" id="cardExpiration">
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="cardCVV">CVV</label>
+                            <input type="text" class="form-control" id="cardCVV">
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkRules">
+                                <label class="form-check-label" for="checkRules">
+                                    Akceptuję regulamin
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-lag" type="submit">
+                            Przejdź do płatności
+                        </button>
+                </div>
+
+                <div class="col-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">Koszyk</span>
+                        <span class="badge bg-primary rounded-pill">2</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">2 tony węgla</h6>
+                                <small class="text-body-secondary">Naprawdę dużo węgla</small>
+                            </div>
+                            <span class="text-body-secondary">2000 zł</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">3 jabłka</h6>
+                                <small class="text-body-secondary">Nie tak dużo jabłek</small>
+                            </div>
+                            <span class="text-body-secondary">2,40 zł</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <span>Suma</span>
+                            <strong>2002,40 zł</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+                <p clas="mb-1">© 2024 Sklep z węglem i jabłkami</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
